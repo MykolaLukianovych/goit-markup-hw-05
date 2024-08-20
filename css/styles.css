@@ -462,7 +462,7 @@ img {
   flex-direction: row;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
@@ -515,6 +515,7 @@ img {
 
 .sub-con {
   display: flex;
+  gap: 24px;
 }
 
 .sub-button-icon {
@@ -563,18 +564,17 @@ img {
 
 .modal-close-btn {
   position: absolute;
+  padding: 0;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
-  padding: 0;
   cursor: pointer;
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
